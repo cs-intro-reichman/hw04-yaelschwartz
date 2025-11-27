@@ -82,13 +82,14 @@ public class ArrCharOps {
      *  If no such character is found, returns -1.
      */
     public static int lastIndexOf(char[] arr, char ch) {
-        for (int i = 0; i <arr.length; i++) {
-            if (i == ch) {
-            return i;              
-            }
+    for (int i = arr.length - 1; i >= 0; i--) {
+        if (arr[i] == ch) {
+            return i;
         }
-        return -1;
     }
+    return -1;
+}
+
 
     /* Returns an array which is the concatanation of the two given arrays.
     */
